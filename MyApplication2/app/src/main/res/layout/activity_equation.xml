@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/eqback"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Equation">
+
+    <TextView
+        android:id="@+id/EquText"
+        android:layout_width="234dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="12dp"
+        android:gravity="center"
+        android:text="@string/Instruction"
+        app:layout_constraintBottom_toTopOf="@+id/varA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/varA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="12dp"
+        android:autofillHints="@string/varA"
+        android:ems="10"
+        android:hint="@string/varA"
+        android:inputType="numberSigned"
+        app:layout_constraintBottom_toTopOf="@+id/varB"
+        app:layout_constraintEnd_toEndOf="@+id/EquText"
+        app:layout_constraintTop_toBottomOf="@+id/EquText" />
+
+    <EditText
+        android:id="@+id/varB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="@string/varB"
+        android:inputType="numberSigned"
+        app:layout_constraintBottom_toTopOf="@+id/varC"
+        app:layout_constraintStart_toStartOf="@+id/varA"
+        app:layout_constraintTop_toBottomOf="@+id/varA" />
+
+    <EditText
+        android:id="@+id/varC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:ems="10"
+        android:hint="@string/varC"
+        android:inputType="numberSigned"
+        app:layout_constraintBottom_toTopOf="@+id/Solve"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/varB" />
+
+    <Button
+        android:id="@+id/Solve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/Solve"
+        app:layout_constraintBottom_toTopOf="@+id/Solvetext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/varC" />
+
+    <TextView
+        android:id="@+id/Solvetext"
+        android:layout_width="238dp"
+        android:layout_height="238dp"
+        android:layout_marginStart="97dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="35dp"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toStartOf="@+id/switch2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Solve" />
+
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="57dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Solvetext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Solvetext" />
+</androidx.constraintlayout.widget.ConstraintLayout>

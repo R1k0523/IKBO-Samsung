@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menuback"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu">
+
+    <TextView
+        android:id="@+id/Question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="27dp"
+        android:text="@string/Question"
+        app:layout_constraintBottom_toTopOf="@+id/Camera"
+        app:layout_constraintEnd_toEndOf="@+id/Camera"
+        app:layout_constraintTop_toBottomOf="@+id/HiName"
+        tools:text="@string/Question" />
+
+    <TextView
+        android:id="@+id/HiName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="123dp"
+        android:layout_marginBottom="14dp"
+        android:text="@string/User"
+        app:layout_constraintBottom_toTopOf="@+id/Question"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Camera"
+        android:layout_width="157dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="25dp"
+        android:text="@string/Camera"
+        app:layout_constraintBottom_toTopOf="@+id/Browser"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Question"
+        tools:text="@string/Camera" />
+
+    <Button
+        android:id="@+id/Browser"
+        android:layout_width="159dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
+        android:text="@string/Browser"
+        app:layout_constraintBottom_toTopOf="@+id/Equation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Camera" />
+
+    <Button
+        android:id="@+id/Equation"
+        android:layout_width="159dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/Equation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Browser" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="67dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

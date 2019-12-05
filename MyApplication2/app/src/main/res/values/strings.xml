@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="Welcome">Welcome to our social network. Please, enter the login and password.</string>
+    <string name="Wrong">Wrong login or password</string>
+    <string name="Login">Login</string>
+    <string name="Help">Help</string>
+    <string name="Password">Password</string>
+    <string name="checkLogin">oleg</string>
+    <string name="checkPassword">42</string>
+    <string name="varA">A</string>
+    <string name="varB">B</string>
+    <string name="varC">C</string>
+    <string name="Instruction">Enter the coefficients of quadric equation to get a answer.</string>
+    <string name="Camera">Take a  photo</string>
+    <string name="Equation">Equation</string>
+    <string name="Browser">Open a browser</string>
+    <string name="Name">Name</string>
+    <string name="User">User</string>
+    <string name="Question">What do you want?</string>
+    <string name="Answer">Answer will be here</string>
+    <string name="Solve">Solve</string>
+</resources>
